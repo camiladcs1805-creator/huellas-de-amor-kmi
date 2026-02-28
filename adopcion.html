@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Adopción | Huellas de Amor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🐾 Huellas de Amor</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="adopcion.html">Adopción</a>
+            <a href="donaciones.html">Donaciones</a>
+        </nav>
+    </header>
+
+    <section class="adoption-header">
+        <h1>Encuentra a tu mejor amigo</h1>
+        <p>Todos estos pequeños están esperando por un hogar lleno de amor.</p>
+        
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterPets('all')">Todos</button>
+            <button class="filter-btn" onclick="filterPets('perro')">Perros</button>
+            <button class="filter-btn" onclick="filterPets('gato')">Gatos</button>
+        </div>
+    </section>
+
+    <section class="pet-grid" id="pet-grid">
+        <div class="pet-card perro">
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=500" alt="Perro en adopción">
+            <div class="pet-info">
+                <h3>Max</h3>
+                <p><b>Edad:</b> 2 años</p>
+                <p>Energético, le encanta jugar con pelotas y es muy protector.</p>
+                <button class="btn-adopt">Conóceme</button>
+            </div>
+        </div>
+
+        <div class="pet-card gato">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=500" alt="Gato en adopción">
+            <div class="pet-info">
+                <h3>Luna</h3>
+                <p><b>Edad:</b> 6 meses</p>
+                <p>Tranquila, cariñosa y perfecta para vivir en departamento.</p>
+                <button class="btn-adopt">Conóceme</button>
+            </div>
+        </div>
+
+        <div class="pet-card perro">
+            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=500" alt="Perro en adopción">
+            <div class="pet-info">
+                <h3>Bruno</h3>
+                <p><b>Edad:</b> 4 años</p>
+                <p>Un caballero educado que busca un sofá cómodo donde descansar.</p>
+                <button class="btn-adopt">Conóceme</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Donaciones | Huellas de Amor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <header>
+        <div class="logo">🐾 Huellas de Amor</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="adopcion.html">Adopción</a>
+            <a href="donaciones.html">Donaciones</a>
+        </nav>
+    </header>
+
+    <section class="donation-hero">
+        <h1>Tu ayuda salva vidas</h1>
+        <p>Cada moneda se traduce en una cola moviéndose de felicidad.</p>
+    </section>
+
+    <div class="donation-container">
+        <div class="impact-cards">
+            <h2>¿Cómo ayuda tu donación?</h2>
+            <div class="card-grid">
+                <div class="impact-card" onclick="selectAmount(10)">
+                    <span class="icon">🦴</span>
+                    <h3>$10 USD</h3>
+                    <p>Alimenta a un cachorro por una semana.</p>
+                </div>
+                <div class="impact-card" onclick="selectAmount(50)">
+                    <span class="icon">💉</span>
+                    <h3>$50 USD</h3>
+                    <p>Cubre el esquema completo de vacunas.</p>
+                </div>
+                <div class="impact-card" onclick="selectAmount(100)">
+                    <span class="icon">🏠</span>
+                    <h3>$100 USD</h3>
+                    <p>Rescate, esterilización y refugio temporal.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="donation-form-box">
+            <form id="donation-form">
+                <h3>Detalles de la donación</h3>
+                <div class="input-group">
+                    <label>Monto a donar ($)</label>
+                    <input type="number" id="custom-amount" placeholder="Ingresa el monto" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Nombre Completo</label>
+                    <input type="text" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Frecuencia</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="freq" checked> Una vez</label>
+                        <label><input type="radio" name="freq"> Mensual</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-donate">Confirmar Donación Segura</button>
+                <p class="security-note">🔒 Pago encriptado y seguro</p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
